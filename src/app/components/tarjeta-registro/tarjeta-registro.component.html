@@ -1,0 +1,599 @@
+<div class="container .container-fluid">
+  <img
+    class="ancho-maximo100"
+    src="{{ '../assets/img/portada.jpeg' }}"
+    alt="portada"
+  />
+  <hr />
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col">
+        <h4 class="text-center mt-2">Motocross</h4>
+      </div>
+      <table class="table table-dark table-sm">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">Categorías</th>
+            <th scope="col">Competidores</th>
+            <th scope="col">Cupos</th>
+          </tr>
+        </thead>
+        <tbody class="text-center letrasSmall">
+          <tr>
+            <td>MX_1</td>
+            <td>{{ cupoMX_1 }}</td>
+            <td class="text-success" *ngIf="cupoMX_1 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMX_1 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_2</td>
+            <td>{{ cupoMX_2 }}</td>
+            <td class="text-success" *ngIf="cupoMX_2 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMX_2 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_JUNIOR</td>
+            <td>{{ cupoMX_JUNIOR }}</td>
+            <td class="text-success" *ngIf="cupoMX_JUNIOR < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMX_JUNIOR > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_3</td>
+            <td>{{ cupoMX_3 }}</td>
+            <td class="text-success" *ngIf="cupoMX_3 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMX_3 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_NOVICIOS</td>
+            <td>{{ cupoMX_NOVICIOS }}</td>
+            <td class="text-success" *ngIf="cupoMX_NOVICIOS < 17">
+              Disponible
+            </td>
+            <td class="text-danger" *ngIf="cupoMX_NOVICIOS > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_4</td>
+            <td>{{ cupoMX_4 }}</td>
+            <td class="text-success" *ngIf="cupoMX_4 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMX_4 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_INTERMEDIA</td>
+            <td>{{ cupoMX_INTERMEDIA }}</td>
+            <td class="text-success" *ngIf="cupoMX_INTERMEDIA < 17">
+              Disponible
+            </td>
+            <td class="text-danger" *ngIf="cupoMX_INTERMEDIA > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MX_5</td>
+            <td>{{ cupoMX_5 }}</td>
+            <td class="text-success" *ngIf="cupoMX_5 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMX_5 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MINICROSS</td>
+            <td>{{ cupoMINICROSS }}</td>
+            <td class="text-success" *ngIf="cupoMINICROSS < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMINICROSS > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>MAMADERA</td>
+            <td>{{ cupoMAMADERA }}</td>
+            <td class="text-success" *ngIf="cupoMAMADERA < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoMAMADERA > 17">Lleno</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col">
+        <h4 class="text-center mt-2">Velocross</h4>
+      </div>
+      <table class="table table-sm table-dark">
+        <thead class="text-center">
+          <tr>
+            <th scope="col">Categorías</th>
+            <th scope="col">Competidores</th>
+            <th scope="col">Cupos</th>
+          </tr>
+        </thead>
+        <tbody class="text-center letrasSmall">
+          <tr>
+            <td>VX_NOVICIOS_NAC</td>
+            <td>{{ cupoVX_NOVICIOS_NAC }}</td>
+            <td class="text-success" *ngIf="cupoVX_NOVICIOS_NAC < 17">
+              Disponible
+            </td>
+            <td class="text-danger" *ngIf="cupoVX_NOVICIOS_NAC > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>VX_SPORT</td>
+            <td>{{ cupoVX_SPORT }}</td>
+            <td class="text-success" *ngIf="cupoVX_SPORT < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoVX_SPORT > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>VX_DAMAS</td>
+            <td>{{ cupoVX_DAMAS }}</td>
+            <td class="text-success" *ngIf="cupoVX_DAMAS < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoVX_DAMAS > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>VX_INTERMEDIA_NAC</td>
+            <td>{{ cupoVX_INTERMEDIA_NAC }}</td>
+            <td class="text-success" *ngIf="cupoVX_INTERMEDIA_NAC < 17">
+              Disponible
+            </td>
+            <td class="text-danger" *ngIf="cupoVX_INTERMEDIA_NAC > 17">
+              Lleno
+            </td>
+          </tr>
+          <tr>
+            <td>VX_1</td>
+            <td>{{ cupoVX_1 }}</td>
+            <td class="text-success" *ngIf="cupoVX_1 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoVX_1 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>VX_3</td>
+            <td>{{ cupoVX_3 }}</td>
+            <td class="text-success" *ngIf="cupoVX_3 < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoVX_3 > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>VX_EXPERTO_NAC_200CC</td>
+            <td>{{ cupoVX_EXPERTO_NAC_200CC }}</td>
+            <td class="text-success" *ngIf="cupoVX_EXPERTO_NAC_200CC < 17">
+              Disponible
+            </td>
+            <td class="text-danger" *ngIf="cupoVX_EXPERTO_NAC_200CC > 17">
+              Lleno
+            </td>
+          </tr>
+          <tr>
+            <td>VX_OPEN_35FL</td>
+            <td>{{ cupoVX_OPEN_35FL }}</td>
+            <td class="text-success" *ngIf="cupoVX_OPEN_35FL < 17">
+              Disponible
+            </td>
+            <td class="text-danger" *ngIf="cupoVX_OPEN_35FL > 17">Lleno</td>
+          </tr>
+          <tr>
+            <td>CAT_110K</td>
+            <td>{{ cupoCAT_110K }}</td>
+            <td class="text-success" *ngIf="cupoCAT_110K < 17">Disponible</td>
+            <td class="text-danger" *ngIf="cupoCAT_110K > 17">Lleno</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+    <div>
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center mt-5">Datos del Competidor</h4>
+        </div>
+      </div>
+      <div class="form-group row mt-4">
+        <div class="col">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Nombre"
+            formControlName="nombre"
+            [class.is-invalid]="nombreNovalido"
+          />
+          <span *ngIf="nombreNovalido" class="text-danger"
+            >Por favor ingrese un nombre válido
+          </span>
+        </div>
+      </div>
+      <div class="form-group row mt-4">
+        <div class="col">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Apellido"
+            formControlName="apellido"
+            [class.is-invalid]="apellidoNovalido"
+          />
+          <span *ngIf="apellidoNovalido" class="text-danger"
+            >Por favor ingrese un apellido válido
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row mt-4">
+      <div class="col">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="Cédula"
+          formControlName="cedula"
+          [class.is-invalid]="cedulaNovalido"
+        />
+        <span *ngIf="cedulaNovalido" class="text-danger"
+          >Por favor ingrese una cédula paraguaya</span
+        >
+      </div>
+    </div>
+    <div class="form-group row mt-4">
+      <div class="col">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="WhatsApp"
+          formControlName="celular"
+          [class.is-invalid]="celularNovalido"
+        />
+        <span *ngIf="celularNovalido" class="text-danger"
+          >Por favor ingrese su número de WhatsApp con este formato 09xx xxx xxx
+          (sin espacios).
+        </span>
+      </div>
+    </div>
+    <div class="form-group row mt-4">
+      <div class="col">
+        <input
+          class="form-control"
+          type="email"
+          placeholder="Correo electrónico"
+          formControlName="correo"
+          [class.is-invalid]="correoNovalido"
+        />
+        <span *ngIf="correoNovalido" class="text-danger"
+          >Por favor ingrese un correo válido</span
+        >
+      </div>
+    </div>
+    <div class="form-group row mt-4">
+      <div class="col">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Ciudad"
+          formControlName="ciudad"
+          [class.is-invalid]="ciudadNovalido"
+        />
+        <span *ngIf="ciudadNovalido" class="text-danger"
+          >Por favor ingrese un nombre de ciudad válido</span
+        >
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <h4 class="text-center mt-5">Categorías Motocross</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" formGroupName="motocross">
+        <div
+          *ngFor="let categoria of motocross; let i = index"
+          class="form-check"
+        >
+          <input
+            class="form-check-input"
+            type="checkbox"
+            [formControlName]="categoria"
+            value="categoria"
+            [id]="i + 'motocross'"
+            (change)="verificarPago()"
+          />
+          <label class="form-check-label" [for]="i + motocross">
+            {{ categoria }}
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4 class="text-center mt-5">Categorías Velocross</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" formGroupName="velocross">
+        <div
+          *ngFor="let categoria of velocross; let i = index"
+          class="form-check"
+        >
+          <input
+            class="form-check-input"
+            type="checkbox"
+            [formControlName]="categoria"
+            value="categoria"
+            [id]="i + 'velocross'"
+            (change)="verificarPago()"
+          />
+          <label class="form-check-label" [for]="i + velocross">
+            {{ categoria }}
+          </label>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mostrarPago" class="form-group row" formGroupName="aporte">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-center mt-5">Comprobante de Pago</h4>
+        </div>
+      </div>
+      <div class="form-row col">
+        <div class="col mt-3">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Nro. de comprobante de pago"
+            formControlName="comprobante"
+            [class.is-invalid]="comprobanteNovalido"
+            required
+          />
+          <span *ngIf="comprobanteNovalido" class="text-danger"
+            >Ingrese nro de comprobante de pago</span
+          >
+        </div>
+        <div class="col mt-3">
+          <div class="row">
+            <div class="col text-center">
+              <input
+                class="radioCheck1"
+                type="radio"
+                id="tigomoney"
+                value="Tigo Money"
+                formControlName="formaPago"
+                required
+              />
+              <label class="imagenCheck1 m-1" for="tigomoney"
+                ><img
+                  class="iconopago"
+                  src="{{ '../assets/img/tigomoney.jpg' }}"
+                  alt="tigo money"
+              /></label>
+              <input
+                class="radioCheck1"
+                type="radio"
+                id="billeterapersonal"
+                value="Billetera Personal"
+                formControlName="formaPago"
+                required
+              />
+              <label class="imagenCheck1 m-1" for="billeterapersonal"
+                ><img
+                  class="iconopago"
+                  src="{{ '../assets/img/billeterapersonal.png' }}"
+                  alt="tigo money"
+              /></label>
+            </div>
+          </div>
+          <span *ngIf="formaPagoNovalido" class="text-danger"
+            >Seleccione una forma de pago</span
+          >
+        </div>
+        <div class="col mt-3">
+          <select
+            class="form-control"
+            formControlName="fecha"
+            [class.is-invalid]="fechaNovalido"
+            required
+          >
+            <option value="">Fecha de Pago</option>
+            <option value="16/12/2020">16/12/2020</option>
+            <option value="17/12/2020">17/12/2020</option>
+            <option value="18/12/2020">18/12/2020</option>
+            <option value="19/12/2020">19/12/2020</option>
+            <option value="20/12/2020">20/12/2020</option>
+          </select>
+          <span *ngIf="fechaNovalido" class="text-danger"
+            >Seleccione una fecha de pago</span
+          >
+        </div>
+        <div class="col mt-3">
+          <input
+            class="form-control"
+            type="number"
+            placeholder="Monto Total Abonado"
+            formControlName="monto"
+            [class.is-invalid]="montoNovalido"
+            required
+          />
+          <span *ngIf="montoNovalido" class="text-danger"
+            >Ingrese monto total abonado
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4 class="text-center mt-5">Datos del Acompañante</h4>
+        <p class="text-danger text-center">
+          Máximo 2 acompañantes por competidor
+        </p>
+      </div>
+    </div>
+    <div
+      *ngIf="contCom > 0"
+      class="form-row col mt-3"
+      formGroupName="Companion1"
+    >
+      <p class="text-md-center">Acompañante 1.</p>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Nombre"
+          formControlName="nombre"
+          [class.is-invalid]="nombre1Novalido"
+        />
+        <span *ngIf="nombre1Novalido" class="text-danger"
+          >Por favor ingrese un nombre válido
+        </span>
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Apellido"
+          formControlName="apellido"
+          [class.is-invalid]="apellido1Novalido"
+        />
+        <span *ngIf="apellido1Novalido" class="text-danger"
+          >Por favor ingrese un apellido válido
+        </span>
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="Cédula"
+          formControlName="cedula"
+          [class.is-invalid]="cedula1Novalido"
+        />
+        <span *ngIf="cedula1Novalido" class="text-danger"
+          >Por favor ingrese una cédula paraguaya</span
+        >
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="WhatsApp"
+          formControlName="celular"
+          [class.is-invalid]="celular1Novalido"
+        />
+        <span *ngIf="celular1Novalido" class="text-danger"
+          >Por favor ingrese su número de WhatsApp con este formato 09xx xxx xxx
+          (sin espacios).
+        </span>
+      </div>
+    </div>
+    <div
+      *ngIf="contCom > 1"
+      class="form-row col mt-3"
+      formGroupName="Companion2"
+    >
+      <p class="text-md-center">Acompañante 2.</p>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Nombre"
+          formControlName="nombre"
+          [class.is-invalid]="nombre2Novalido"
+        />
+        <span *ngIf="nombre2Novalido" class="text-danger"
+          >Por favor ingrese un nombre válido
+        </span>
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Apellido"
+          formControlName="apellido"
+          [class.is-invalid]="apellido2Novalido"
+        />
+        <span *ngIf="apellido2Novalido" class="text-danger"
+          >Por favor ingrese un apellido válido
+        </span>
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="Cédula"
+          formControlName="cedula"
+          [class.is-invalid]="cedula2Novalido"
+        />
+        <span *ngIf="cedula2Novalido" class="text-danger"
+          >Por favor ingrese una cédula paraguaya</span
+        >
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="WhatsApp"
+          formControlName="celular"
+          [class.is-invalid]="celular2Novalido"
+        />
+        <span *ngIf="celular2Novalido" class="text-danger"
+          >Por favor ingrese su número de WhatsApp con este formato 09xx xxx xxx
+          (sin espacios).
+        </span>
+      </div>
+    </div>
+    <div
+      *ngIf="contCom > 2"
+      class="form-row col mt-3"
+      formGroupName="Companion3"
+    >
+      <p class="text-md-center">Acompañante 3.</p>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Nombre"
+          formControlName="nombre"
+          [class.is-invalid]="nombre3Novalido"
+        />
+        <span *ngIf="nombre3Novalido" class="text-danger"
+          >Por favor ingrese un nombre válido
+        </span>
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Apellido"
+          formControlName="apellido"
+          [class.is-invalid]="apellido3Novalido"
+        />
+        <span *ngIf="apellido3Novalido" class="text-danger"
+          >Por favor ingrese un apellido válido
+        </span>
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="Cédula"
+          formControlName="cedula"
+          [class.is-invalid]="cedula3Novalido"
+        />
+        <span *ngIf="cedula3Novalido" class="text-danger"
+          >Por favor ingrese una cédula paraguaya</span
+        >
+      </div>
+      <div class="col mt-4">
+        <input
+          class="form-control"
+          type="number"
+          placeholder="WhatsApp"
+          formControlName="celular"
+          [class.is-invalid]="celular3Novalido"
+        />
+        <span *ngIf="celular3Novalido" class="text-danger"
+          >Por favor ingrese su número de WhatsApp con este formato 09xx xxx xxx
+          (sin espacios).
+        </span>
+      </div>
+    </div>
+    <div *ngIf="contCom < 2" class="form-group row mt-5">
+      <button
+        (click)="agregarCompanion(true)"
+        type="button"
+        class="btn btn-success btn-lg btn-block mb-5"
+      >
+        + Acompañante
+      </button>
+    </div>
+    <div *ngIf="mostrarGuardar" class="form-group row mt-5 mb-5">
+      <button type="submit" class="btn btn-primary btn-lg btn-block">
+        Guardar
+      </button>
+    </div>
+  </form>
+</div>

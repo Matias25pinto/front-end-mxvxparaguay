@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row m-5">
+    <div class="col">
+      <a [routerLink]="['/participantes']"
+        ><i class="fas fa-arrow-left"></i> Participantes</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">{{ categoria }} - {{ modalidad }}</h3>
+      <table *ngIf="participantes" class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Cédula</th>
+            <th scope="col">WhatsApp</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let participante of participantes; let i = index">
+          <tr>
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ participante.nombre }}</td>
+            <td>{{ participante.apellido }}</td>
+            <td>{{ participante.cedula }}</td>
+            <td>{{ participante.celular }}</td>
+            <td>
+              <p *ngIf="participante['confirmado']">Confirmado</p>
+              <p *ngIf="!participante['confirmado']">Pendiente</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* REGISTRO*/
+.ancho-maximo100 {
+  width: 100%;
+  max-width: 100%;
+}
+/*Tamaño de formulario*/
+.letrasSmall {
+  font-size: 0.7em;
+}
+/*mostrar cursor*/
+.mostrarCursor {
+  cursor: pointer;
+}
+.iconopago {
+  width: 100px;
+}
+
+/* Icono de forma de pago*/
+.radioCheck1 {
+  /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+}
+.imagenCheck1 {
+  /* IMAGE STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.radioCheck1:checked + .imagenCheck1 {
+  /* (RADIO CHECKED) IMAGE STYLES */
+  border: 4px solid #31d2f2;
+}

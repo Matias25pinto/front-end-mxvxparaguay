@@ -1,0 +1,60 @@
+<div class="container mt-2">
+  <div class="row">
+    <table class="table table-dark table-sm">
+      <thead class="text-center">
+        <tr>
+          <th>
+            <a
+              class="btn btn-info"
+              [routerLink]="['/participantes/lista', categoria, modalidad]"
+              >Imprimir</a
+            >
+          </th>
+          <th></th>
+          <th>
+            <p class="text-center text-info">{{ modalidad }}</p>
+          </th>
+          <th></th>
+        </tr>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Participante</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let participante of participantes; let i = index"
+          class="text-center letrasSmall align-middle"
+        >
+          <td class="align-items">{{ i + 1 }}</td>
+          <td>{{ participante.cedula }}</td>
+          <td>
+            <p class="text-success" *ngIf="participante.confirmado == 'true'">
+              Confirmado
+            </p>
+            <p class="text-danger" *ngIf="participante.confirmado == 'false'">
+              Pendiente
+            </p>
+          </td>
+          <td>
+            <button
+              [routerLink]="['/participante', participante.cedula]"
+              class="btn btn-info"
+            >
+              Administrar
+            </button>
+            <button
+              class="btn btn-danger m-1"
+              type="button"
+              (click)="borrarParticipante(participante)"
+            >
+              Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

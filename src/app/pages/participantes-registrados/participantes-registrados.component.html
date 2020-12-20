@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center mt-5">Todas las Categorías</h2>
+        <app-tarjeta-participantes
+          [categoria]="''"
+          [modalidad]="''"
+        ></app-tarjeta-participantes>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h2 class="text-center mt-5">Motocross</h2>
+    <div class="row">
+      <div *ngFor="let modalidad of motocross" class="col">
+        <app-tarjeta-participantes
+          [categoria]="'motocross'"
+          [modalidad]="modalidad"
+        ></app-tarjeta-participantes>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h2 class="text-center mt-5">Velocross</h2>
+    <div class="row">
+      <div *ngFor="let modalidad of velocross" class="col">
+        <app-tarjeta-participantes
+          [categoria]="'velocross'"
+          [modalidad]="modalidad"
+        ></app-tarjeta-participantes>
+      </div>
+    </div>
+  </div>
+</div>
